@@ -1,8 +1,8 @@
 {
-  "name": "mern-skeleton",
+  "name": "GSCP",
   "version": "1.0.0",
-  "description": "A MERN stack skeleton web application",
-  "author": "Shama Hoque",
+  "description": "Genesis Supply Chain Platform-StudyTheBlockchain.com",
+  "author": "Achyut Shrestha",
   "license": "MIT",
   "keywords": [
     "react",
@@ -13,9 +13,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shamahoque/mern-skeleton.git"
+    "url": "https://github.com/achyutsun/gscp.git"
   },
-  "homepage": "https://github.com/shamahoque/mern-skeleton",
+  "homepage": "https://github.com/achyutsun/gscp",
   "main": "./dist/server.generated.js",
   "scripts": {
     "development": "nodemon",
