@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MERN Skeleton
 
 ### [Live Demo](http://mvp.gscplatform.io "Genesis Supply Chain Plarform")
@@ -14,3 +15,8 @@
    - To run the application for development, run ```  npm run development  ```
 4. Open [localhost:3000](http://localhost:3000/) in the browser
  
+=======
+# gscp
+Genesis Supply Chain Platform
+       <br> StudyTheBlockchain.com Project
+>>>>>>> 8756353454e4b0c79f94c1506c475d9d56a409f9
