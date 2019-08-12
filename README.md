@@ -7,8 +7,11 @@ Genesis Supply Chain Platform
 
 #### What you need to run this code
 1. Node (8.11.1)
-2. NPM (5.8.0)
-3. MongoDB (3.6.3)
+2. truffle
+3. Ganache
+4. NPM (5.8.0)
+5. MongoDB (3.6.3)
+6. Metamask Chrome Extension
 
 ####  How to run this code
 1. Clone this repository
