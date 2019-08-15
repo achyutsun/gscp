@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My Decentralized Address Book</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/utility.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+        <h1>My decentralized medical records</h1>
+
+        <!-- https://getbootstrap.com/docs/4.1/layout/grid/ -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Insert Medical Records</h2>
+
+                <hr>
+
+                <div id="errors"></div>
+
+                <form>
+                    <label for="problems" class="control-label">problems</label>
+                    <input id="problems" type="text">
+                    
+                    <br><br>
+
+                    <label for="medications" class="control-label">medications</label>
+                    <input id="medications" type="text">
+                    
+                    <br><br>
+
+                    <label for="allergies" class="control-label">allergies</label>
+                    <input id="allergies" type="text">
+
+                    <br><br>
+
+                    <label for="weight" class="control-label">weight</label>
+                    <input id="weight" type="text">
+
+                    <br><br>
+
+                    <label for="height" class="control-label">height</label>
+                    <input id="height" type="text">
+
+                    <br><br>
+
+                    <label for="record_owner" class="control-label">Address of medical record owner</label>
+                    <input id="record_owner" type="text">
+
+                    <br><br>
+                    
+                    <button id="submitContact">Create Medical Record</button>
+
+                    <button id="updateContact">Update Medical Record</button>
+
+                </form>
+            </div>
+
+            <div class="col-md-8">
+                <div id="transactions">
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <h2>Retrieve a person's medical record</h2>
+            <div class="col-md-4">
+                <form>
+                    <label for="retrieval_record_owner_address" class="control-label">Medical Record owner's address</label>
+                    <input id="retrieval_record_owner_address" type="text">
+        
+                    <button id="getContact">Get this medical record</button>
+                </form>
+            </div>
+
+            <div class="col-md-8" id="contact">
+
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
