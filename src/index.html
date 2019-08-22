@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/utility.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -19,8 +20,19 @@
     <![endif]-->
   </head>
   <body>
-
-    <div class="container">
+        <div class="container">
+                <ul class="progressbar">
+                        <li class="active page-item" aria-current="page">
+                            <span class="page-link">
+                                create
+                                <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                        <li><a class="page-link" href="get.html">get</a></li>
+                        <li><a class="page-link" href="update.html">update<a/></li>
+                        <li><a class="page-link" href="view.html">View map</a></li>
+                </ul>
+            <div class="container">
         <h1>My decentralized medical records</h1>
 
         <!-- https://getbootstrap.com/docs/4.1/layout/grid/ -->
@@ -63,9 +75,9 @@
 
                     <br><br>
                     
-                    <button id="submitContact">Create Medical Record</button>
+                    <button id="submitContact" class="btn btn-warning">Create Medical Record</button>
 
-                    <button id="updateContact">Update Medical Record</button>
+                    <button id="updateContact" class="btn btn-info">Update Medical Record</button>
 
                 </form>
             </div>
@@ -76,24 +88,6 @@
                 </div>
             </div>
         </div>
-        
-        <div class="row">
-            <h2>Retrieve a person's medical record</h2>
-            <div class="col-md-4">
-                <form>
-                    <label for="retrieval_record_owner_address" class="control-label">Medical Record owner's address</label>
-                    <input id="retrieval_record_owner_address" type="text">
-        
-                    <button id="getContact">Get this medical record</button>
-                </form>
-            </div>
-
-            <div class="col-md-8" id="contact">
-
-            </div>
-        </div>
-
-        
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -103,5 +97,5 @@
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.js"></script>
     <script src="js/app.js"></script>
-  </body>
+</body>
 </html>
