@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>My Decentralized Address Book</title>
+    <title>Genesis Supply Chain Platform   www.GSCPlatform.io</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
@@ -20,22 +20,6 @@
     <![endif]-->
   </head>
   <body>
-        <div class="row">
-                <h2>Retrieve a person's medical record</h2>
-                <div class="col-md-4">
-                    <form>
-                        <label for="retrieval_record_owner_address" class="control-label">Medical Record owner's address</label>
-                        <input id="retrieval_record_owner_address" type="text">
-            
-                        <button id="getContact" class="btn btn-success">Get this medical record</button>
-                    </form>
-                </div>
-    
-                <div class="col-md-8" id="contact">
-    
-                </div>
-            </div>
-
         <div class="container">
                 <ul class="progressbar">
                         <li><a class="page-link" href="index.html">create</a></li>
@@ -46,54 +30,65 @@
                             </span>    
                         </li>
                         <li><a class="page-link" href="update.html">update</a></li>
-                        <li><a class="page-link" href="view.html">View map</a></li>
+                        <li><a class="page-link" href="view.html">Shipping</a></li>
                 </ul>
         <div class="container">
-        <h1>My decentralized medical records</h1>
+        <h1>Genesis Supply Chain</h1>
+
+        <div class="row">
+                <h2>Ordered Item Details</h2>
+                <div class="col-md-4">
+                    <form>
+                        <label for="retrieval_record_owner_address" class="control-label">Purchaser Owner's Address</label>
+                        <input id="retrieval_record_owner_address" type="text">
+            
+                        <button id="getContact" class="btn btn-success">View Ordered Item</button>
+                    </form>
+                </div>
+    
+                <div class="col-md-8" id="contact">
+    
+                </div>
+            </div>
 
         <!-- https://getbootstrap.com/docs/4.1/layout/grid/ -->
         <div class="row">
             <div class="col-md-4">
-                <h2>Insert Medical Records</h2>
 
                 <hr>
 
                 <div id="errors"></div>
 
                 <form>
-                    <label for="problems" class="control-label">problems</label>
+                    <label for="Item Name" class="control-label">Item Name</label>
                     <input id="problems" type="text">
                     
                     <br><br>
 
-                    <label for="medications" class="control-label">medications</label>
+                    <label for="Item Category" class="control-label">Item Category</label>
                     <input id="medications" type="text">
                     
                     <br><br>
 
-                    <label for="allergies" class="control-label">allergies</label>
+                    <label for="Manufacturer Company" class="control-label">Manufacturer Company</label>
                     <input id="allergies" type="text">
 
                     <br><br>
 
-                    <label for="weight" class="control-label">weight</label>
+                    <label for="Supplier" class="control-label">Supplier</label>
                     <input id="weight" type="text">
 
                     <br><br>
 
-                    <label for="height" class="control-label">height</label>
+                    <label for="Supplier Rating" class="control-label">Supplier Rating</label>
                     <input id="height" type="text">
 
                     <br><br>
 
-                    <label for="record_owner" class="control-label">Address of medical record owner</label>
+                    <label for="record_owner" class="control-label">Address of Purchaser ETH</label>
                     <input id="record_owner" type="text">
 
                     <br><br>
-                    
-                    <button id="submitContact" class="btn btn-warning">Create Medical Record</button>
-
-                    <button id="updateContact" class="btn btn-info">Update Medical Record</button>
 
                 </form>
             </div>
