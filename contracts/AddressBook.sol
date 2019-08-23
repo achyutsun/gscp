@@ -25,6 +25,10 @@ contract AddressBook{
 		string allergies;
 		string weight;
 		string height;
+		string payment;
+		string shippingCompany;
+		string shipmentTracking;
+		string deliveryDate;
 	}
 
 	//way one
